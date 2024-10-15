@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Numans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <main>
+        <img src="img/bag.png" alt="Sacola de compras">
+        <form action="">
+            <input class="input-adicionar" id="input-adicionar" type="text" placeholder="Digite o item que deseja adicionar">
+            <button class="button-adicionar" id="button-adicionar">Salvar item</button>
+        </form>
+        <ul class="lista-compras" id="lista-compras">
+            <h2 class="lista-compras__titulo">Lista de compras</h2>
+            <hr>
+            <p class="mensagem-lista-vazia" id="mensagem-lista-vazia">Sua lista está vazia. Adicione itens à ela para não esquecer de comprar!</p>
+        </ul>
+        <ul class="lista-compras display-none" id="lista-comprados">
+            <h2 class="lista-compras__titulo">Comprados:</h2>
+            <hr>
+        </ul>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por m4rcone para fins de estudo.</p>
+    </footer>
+    
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

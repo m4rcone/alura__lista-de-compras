@@ -1,0 +1,184 @@
+:root {
+    --cor-primaria: #F55B64;
+    --cor-secundaria: #C2373F;
+    --neutro: #F9F9F9;
+    --preto: #131730;
+    --fonte-titulo: "Krona One", sans-serif;
+    --fonte-texto: 'Numans', sans-serif;
+    --degrade-azul: linear-gradient(180deg, #000000 0%, #26327F 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--degrade-azul);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: var(--neutro);
+    margin: 4rem auto; /* Centraliza horizontalmente */
+    border-radius: 1rem;
+    padding: 3.5rem;
+    width: 27.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.input-adicionar {
+    padding: 0.75rem 1rem;
+    border: solid 1px var(--preto);
+    border-radius: 1.5rem;
+    width: 300px;
+    font-family: "Mont Serrat", sans-serif;
+    font-size: 1rem;
+    color: var(--preto);
+    height: 400;
+    text-align: center;
+}
+
+.input-adicionar::placeholder {
+    font-family: "Mont Serrat", sans-serif;
+    font-size: 1rem;
+    height: 400;
+    text-align: center;
+    color: #8A8A8A;
+}
+
+.button-adicionar {
+    font-family: var(--fonte-texto);
+    background-color: var(--cor-primaria);
+    color: var(--neutro);
+    text-align: center;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+}
+
+.button-adicionar:hover {
+    background-color: var(--cor-secundaria);
+}
+
+.lista-compras {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.display-none {
+    display: none;
+}
+
+hr {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 2px dotted var(--cor-primaria);
+}
+
+.lista-compras__titulo {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.mensagem-lista-vazia {
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+}
+
+.lista-compras__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.item__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox__conteudo {
+    display: flex;
+    align-items: center;
+}
+
+.input-checkbox {
+    display: none;
+}
+
+.input-checkbox-custom {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--preto);
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.checked {
+    background-color: var(--preto);
+    position: relative;
+}
+
+.checked::after {
+    content: "";
+    position: absolute;
+    left: 30%;
+    width: 5px;
+    height: 14px;
+    border-top: 2px solid var(--neutro);
+    border-left: 2px solid var(--neutro);
+    transform: rotate(-140deg);
+}
+
+.item__texto {
+    margin-right: 0.5rem;
+}
+
+.item__botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.botao__img {
+    cursor: pointer;
+}
+
+.item__data {
+    font-size: 0.75rem;
+}
+
+footer {
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    padding: 3rem;
+    color: #DBE4EF;
+}
